@@ -24,10 +24,10 @@ def take_command():
             print("listening...")
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
-            # print(command)
+            
         if 'SAM' or 'Sam' or 'sam' in command:
                 command = command.replace('sam', '')
-                # print(command)
+                
 
     except:
         pass
